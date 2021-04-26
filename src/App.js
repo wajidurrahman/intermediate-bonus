@@ -6,9 +6,7 @@ import ThumbUpIcon from '@material-ui/icons/ThumbUp';
 
 function App() {
   const [likeColor, setLikeColor] = useState('');
-  const handleLike = () => {
-    const color = likeColor ? '' : 'primary';
-    setLikeColor(color);
+  const handleLike = () => { setLikeColor(likeColor ? '' : 'primary');
   }
   return (
     <div className="App">
