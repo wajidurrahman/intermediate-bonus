@@ -6,12 +6,13 @@ import ThumbUpIcon from '@material-ui/icons/ThumbUp';
 
 function App() {
   const [likeColor, setLikeColor] = useState('');
-  const handleLike = () => { setLikeColor(likeColor ? '' : 'primary');
+  const handleLike = () => {
+    ;
   }
   return (
     <div className="App">
       <AccessAlarmIcon/>
-      <ThumbUpIcon onClick={handleLike} color={likeColor}/>
+      <ThumbUpIcon onClick={()=> setLikeColor(likeColor ? '' : 'primary')} color={likeColor}/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
